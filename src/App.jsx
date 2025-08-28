@@ -4,8 +4,6 @@ import { Header } from './components/header'
 import { Features } from './components/features'
 import { About } from './components/about'
 import { Services } from './components/services'
-import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
 import { Footer } from './components/footer'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
@@ -25,11 +23,9 @@ const App = () => {
     <div>
       <Navigation />
       <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
+      <Features data={landingPageData.Funcionalidades} />
       <Services data={landingPageData.Services} />
-      <Gallery />
-      <Testimonials data={landingPageData.Testimonials} />
+      <About data={landingPageData.Contact} />
       <Footer />
     </div>
   )

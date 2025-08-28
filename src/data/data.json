@@ -1,59 +1,54 @@
 {
     "Header": {
-
         "title": "Aprendi+",
         "paragraph": "A transformação da sua preparação para o ENEM!"
-
     },
-    "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
-        ],
-        "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
-        ]
+    "Contact": {
+        "paragraph": "Ficou com alguma dúvida ou quer saber mais? Entre em contato conosco através dos canais abaixo. Nossa equipe está pronta para te ajudar!",
+        "whatsapp": "(83) 98774-1173",
+        "whatsapp_link": "5583987741173",
+        "email": "suporte@aprendimais.com"
     },
-    "Services": [{
+    "Services": [
+        {
             "icon": "fa fa-wordpress",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "name": "Plano Gratuito",
+            "text": "Ideal para quem quer começar a se preparar e conhecer nossa plataforma.",
+            "topicos": [
+                "Atividades Diárias",
+                "5 vidas máximas",
+                "Dicas do Especialista",
+                "Acesso aos Simulados nos meses de Jul e Set",
+                "1 Simulado por mês"
+            ]
         },
         {
-            "icon": "fa fa-cart-arrow-down",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-wordpress",
+            "name": "Plano Basic",
+            "text": "Mais um passo rumo à sua aprovação.",
+            "topicos": [
+                "Atividades Diárias",
+                "10 vidas máximas",
+                "Dicas do Especialista",
+                "Acesso aos Simulados em qualquer mês",
+                "1 Simulado por mês"
+            ]
         },
         {
-            "icon": "fa fa-cloud-download",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-language",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-plane",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-pie-chart",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "icon": "fa fa-wordpress",
+            "name": "Plano Premium",
+            "text": "O melhor caminho rumo ao ENEM!",
+            "topicos": [
+                "Atividades Diárias",
+                "Vidas ilimitadas",
+                "Dicas do Especialista",
+                "Simulados ilimitados",
+                "Funcionalidade para escolha do tema das atividades diárias"
+            ]
         }
-
-
     ],
-    "Testimonials": [{
+    "Testimonials": [
+        {
             "img": "img/testimonials/01.jpg",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "John Doe"
@@ -84,7 +79,8 @@
             "name": "Johnathan Doe"
         }
     ],
-    "Team": [{
+    "Team": [
+        {
             "img": "img/team/01.jpg",
             "name": "John Doe",
             "job": "Director"
@@ -93,7 +89,8 @@
             "img": "img/team/02.jpg",
             "name": "Mike Doe",
             "job": "Senior Designer"
-        }, {
+        },
+        {
             "img": "img/team/03.jpg",
             "name": "Jane Doe",
             "job": "Senior Designer"
@@ -104,33 +101,26 @@
             "job": "Project Manager"
         }
     ],
-    "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
-    },
-    "Features": [{
+    "Funcionalidades": [
+        {
             "icon": "fa fa-comments-o",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Atividades Diárias",
+            "text": "Atividades para você praticar diariamente."
         },
         {
             "icon": "fa fa-bullhorn",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Simulados",
+            "text": "Simulados com várias questões para você se ambientar ao Exame."
         },
         {
             "icon": "fa fa-group",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Dica do Especialista",
+            "text": "Dicas sobre assuntos específicos direto dos nossos Especialistas."
         },
         {
             "icon": "fa fa-magic",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "title": "Performance",
+            "text": "Acompanhe sua performance dentro de cada área do conhecimento."
         }
     ]
 }

@@ -582,3 +582,20 @@ color: #777;
 .cursor{
 	cursor: pointer;
 }
+
+
+/* Ajuste para a imagem da seção de contato */
+#contact .col-md-6 img {
+  max-height: 400px; /* Limita a altura máxima da imagem */
+  width: auto;       /* Mantém a proporção original */
+  display: block;    /* Para centralizar */
+  margin: 0 auto;    /* Centraliza a imagem horizontalmente */
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* Se a imagem ainda for muito larga em telas pequenas (mobile), adicione isso: */
+@media (max-width: 767px) { /* Para telas menores que 768px (celulares) */
+  #contact .col-md-6 img {
+    max-height: 250px; /* Uma altura menor para dispositivos móveis */
+  }
+}

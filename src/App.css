@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.contact-item i {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #555;
+}
+
+#contact {
+  background-color: #f6f6f6 !important; /* Força o fundo a ser cinza claro */
+  padding: 100px 0;
+}
+
+#contact .contact-item a {
+  color: #333 !important; /* Força o texto do link a ser escuro */
+  font-size: 16px;
+}
