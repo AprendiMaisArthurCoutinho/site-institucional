@@ -1,0 +1,58 @@
+# Nome do Workflow
+name: Build and Deploy to GitHub Pages
+
+# Gatilho: roda sempre que houver um push na branch 'main'
+on:
+  push:
+    branches: ["main"]
+  # Permite que você rode este workflow manualmente pela aba Actions
+  workflow_dispatch:
+
+# Define as permissões necessárias para o GITHUB_TOKEN para o deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Define os jobs (tarefas) que o workflow irá executar
+jobs:
+  # Primeiro job: construir o projeto
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Usando uma versão LTS recente
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        # Executa o comando de build com a variável de ambiente necessária
+        run: npm run build
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
+
+      - name: Upload artifact
+        # Sobe os arquivos da pasta 'build' para que o job de deploy possa usá-los
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './build'
+
+  # Segundo job: fazer o deploy do projeto
+  deploy:
+    # O deploy só roda depois que o build for concluído com sucesso
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
